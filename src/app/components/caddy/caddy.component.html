@@ -1,0 +1,13 @@
+<div class="caddy-card">
+  <h3 style="text-align: center;border-bottom: 1px solid black;">Mon panier</h3>
+  <p style="text-align: center;" *ngFor="let prr of produits | keyvalue">
+    Marque :{{prr.key.marque}}<br>
+    Modele :{{prr.key.modele}}<br>
+    Prix unitaire :{{prr.key.prixUnitaire}}TND<br>
+    <span style="font-weight: bold;"> Nombre commandé: {{prr.value}}</span><br>
+  </p>
+</div>
+<div class="prix-style">
+  <p style="font-weight: bold;text-align: center;">Prix total: {{prixTotal()}} TND</p>
+  <button style="margin-left: 6rem;" type="button" (click)="validerCommande()" [disabled]="prixTotal()===0">Passer commande</button>
+</div>

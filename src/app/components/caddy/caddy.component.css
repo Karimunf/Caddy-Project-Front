@@ -1,0 +1,10 @@
+.caddy-card{
+   width: 20rem;
+   height: 25rem;
+   overflow: auto;
+   border:1px solid black;
+}
+.prix-style{
+   height: 5rem;
+   border: 1px solid black;
+}

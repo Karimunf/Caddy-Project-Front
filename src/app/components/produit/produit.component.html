@@ -1,0 +1,13 @@
+<div *ngIf="produit.quantite" class="produit-style">
+    Marque : {{produitMock.marque}}<br>
+    Modele : {{produitMock.modele}}<br>
+    Caracteristiques : {{produitMock.caracteristiques}}<br>
+    Prix Unitaire : {{produitMock.prixUnitaire}}<br>
+    Quantité : {{produitMock.quantite}}<br>
+    <div class="inline">
+        <button type="button" (click)="ajouterAuPanier()" [disabled]="produitMock.quantite<1">
+            Ajouter au panier</button>
+        <button *ngIf="produitMock.quantite!=produit.quantite" type="button" (click)="retirerDuPanier()">Retirer du
+            panier</button>
+    </div>
+</div>
