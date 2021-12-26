@@ -1,0 +1,9 @@
+.wrapper{
+    display: flex;
+}
+.welcome-style{
+    display: flex;
+}
+.caddy-style{
+    margin-left: 10rem;
+}
